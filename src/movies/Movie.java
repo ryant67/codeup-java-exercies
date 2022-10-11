@@ -1,6 +1,6 @@
 package movies;
 
-public class Movie {
+public class Movie extends MoviesArray {
 
     private String name;
     private String category;
