@@ -24,8 +24,14 @@ public class Input {
     }
 
     public static int getInt() {
+        try {
+        return scan.nextInt();
+        } catch (Exception e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
         return scan.nextInt();
     }
+
 
     public static double getDouble(double min, double max) {
         System.out.printf("Give me a number between %s and %s: ", min, max);
@@ -37,6 +43,11 @@ public class Input {
     }
 
     public static double getDouble() {
+        try {
+        return scan.nextDouble();
+        } catch (Exception e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
         return scan.nextDouble();
     }
 

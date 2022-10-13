@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class InputTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(Input.getDouble());
         System.out.println(Input.getDouble(10.5, 20.8));
         System.out.println(Input.getInt());
