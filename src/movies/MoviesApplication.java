@@ -2,11 +2,11 @@ package movies;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MoviesApplication extends Movie {
+public class MoviesApplication {
 
-    public MoviesApplication(String name, String category) {
-        super(name, category);
-    }
+//    public MoviesApplication(String name, String category) {
+//        super(name, category);
+//    }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
