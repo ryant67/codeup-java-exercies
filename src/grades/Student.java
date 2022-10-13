@@ -6,6 +6,7 @@ public class Student {
 
     private String name;
     ArrayList<Integer> grades;
+    private String key;
 
     public Student(String name) {
         this.name = name;

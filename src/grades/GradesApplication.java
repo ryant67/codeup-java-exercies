@@ -1,6 +1,8 @@
 package grades;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
 
@@ -31,22 +33,47 @@ public class GradesApplication {
         //Adding students to HashMap
         students.put("GeorgyIT", student0);
         students.put("Joey123", student1);
-        students.put("JaneJ4", student2);
-        students.put("Lucy897", student3);
+        students.put("Jane321", student2);
+        students.put("Lucyloohoo", student3);
 
-//        System.out.println(students);
-
+        //GitHub username creator
+        ArrayList<String> names = new ArrayList<>();
         for(String keys : students.keySet()) {
-            System.out.println(keys);
+            names.add("|" + keys + "|");
         }
+        System.out.println(names);
+
+        String newName = "";
+        for(int i = 0; i < names.size(); i++) {
+            newName += names.get(i) + " ";
+        }
+        System.out.println(newName);
+
+//        String newName = "";
+//        String nameFormat = "";
+//        for(int i = 0; i < names.size(); i++) {
+//            newName += names.get(i) + " ";
+//            nameFormat += "|" + names.get(i) + "| ";
+//        }
+//        System.out.println(newName);
 
         //Command Line Interface
+//        Scanner scan = new Scanner(System.in);
 //        System.out.println("Hello!");
 //        System.out.println("");
 //        System.out.println("Here are the GitHub usernames for our students: ");
 //        System.out.println("");
-//        System.out.printf("|%s| |%s| |%s| |%s|",);
+//        System.out.println(nameFormat);
 //        System.out.println("");
+//        System.out.println("Which student would you like to see more information on?");
+//        String userInput = scan.nextLine();
+//        System.out.println(userInput);
+//
+//        if(userInput.equalsIgnoreCase(newName)) {
+//            System.out.println("Name: " + student0.getName() + " - GitHub UserName: " + names + "%nCurrent Average: " + student0.getGradeAverage());
+//        } else {
+//            System.out.println("Sorry, no student was found with the GitHub username of " + "\"" + userInput + "\"");
+//        }
 
 
     }
